@@ -1,6 +1,10 @@
 # Q0: Why is this error being thrown?
 
+The Pokemon model doesn't exist!
+
 # Q1: How are the random Pokemon appearing? What is the common factor between all the possible Pokemon that appear? *
+
+The 4 different Pokemon are seeded into the database and then home_controller.rb selects a random one to display to the home page. The common factor 
 
 # Question 2a: What does the following line do "<%= button_to "Throw a Pokeball!", capture_path(id: @pokemon), :class => "button medium", :method => :patch %>"? Be specific about what "capture_path(id: @pokemon)" is doing. If you're having trouble, look at the Help section in the README.
 

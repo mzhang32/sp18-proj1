@@ -1,8 +1,9 @@
 class PokemonsController < ApplicationController
 	def capture
 		pok = Pokemon.find params[:id]
-		pok.trainer_id = current_trainer
-		pok.save!
+		pok.update_attribute :trainer, current_trainer
+		puts "hey"
 		redirect_to '/'
+
 	end
 end
